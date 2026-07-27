@@ -25,7 +25,7 @@ description_ru = {metainfo_data['description_ru']}
         f.write(styles_code.strip() + "\n")
     print(f"Updated theme: {folder}")
 
-def make_styles(inherits, bg, bg_darker, surface, surface_elevated, surface_hover, card_bg, text, text_muted, disabled_text, border, accent, accent_dark, accent_blue, grad_colors, bg_gradient_stops, font="Inter", r_small="8px", r_large="14px", r_card="18px", preloader_style="pulse"):
+def make_styles(inherits, bg, bg_darker, surface, surface_elevated, surface_hover, card_bg, text, text_muted, disabled_text, border, accent, accent_dark, accent_blue, grad_colors, bg_gradient_stops, font="Inter", r_small="8px", r_large="14px", r_card="18px", preloader_style="pulse", anim_type="gradient"):
     nav_inactive = text_muted
     separator = border
     scrollbar_bg = bg_darker
@@ -45,13 +45,8 @@ def make_styles(inherits, bg, bg_darker, surface, surface_elevated, surface_hove
     detail_overlay = "rgba(0,0,0,0.5)"
     cover_frame_bg = surface
 
-    # Card gradient animation
     grad_list_str = ",\n        ".join([f'{{"position": {p}, "color": "{c}"}}' for p, c in grad_colors])
-
-    # Library background gradient stops
     bg_stops_str = ",\n            ".join([f'stop:{p} {c}' for p, c in bg_gradient_stops])
-
-    # Detail page gradient stops
     detail_grad_str = ",\n    ".join([f'{{"position": {p}, "color": "{c}"}}' for p, c in bg_gradient_stops])
 
     return f'''THEME_INHERITS = "{inherits}"
@@ -149,7 +144,7 @@ GAME_CARD_ANIMATION = {{
     "gradient_anim_duration": 3000,
     "gradient_start_angle": 360,
     "gradient_end_angle": 0,
-    "card_animation_type": "gradient",
+    "card_animation_type": "{anim_type}",
     "fill_color": color_accent,
     "fill_alpha": 90,
     "stripe_color": color_accent,
@@ -197,7 +192,7 @@ create_theme("catppuccin",
     make_styles("standart", "#1e1e2e", "#181825", "#313244", "#45475a", "#585b70", "#313244", "#cdd6f4", "#a6adc8", "#585b70", "#45475a", "#cba6f7", "#b4befe", "#89b4fa", [(0, "#cba6f7"), (0.5, "#89b4fa"), (1, "#cba6f7")], [(0, "#11111b"), (0.5, "#1e1e2e"), (1, "#313244")], r_card="18px")
 )
 
-# 3. Miasma (xero official palette)
+# 3. Miasma
 create_theme("miasma",
     {"dark_variant": "miasma", "light_variant": "miasma", "name_en": "Miasma", "name_ru": "Miasma", "description_en": "Organic dark olive Miasma theme by xero.", "description_ru": "Органическая тёмно-оливковая тема Miasma."},
     make_styles("standart", "#222222", "#1a1a1a", "#2c2c2c", "#333333", "#3c3c3c", "#2c2c2c", "#c2c2b0", "#8a8a7a", "#666666", "#444444", "#78824b", "#5f875f", "#c9a554", [(0, "#78824b"), (0.5, "#bb7744"), (1, "#c9a554")], [(0, "#181818"), (0.5, "#22251d"), (1, "#2a2e22")], r_card="18px", preloader_style="wave")
@@ -239,16 +234,16 @@ create_theme("hannah-montana",
     make_styles("standart", "#1e0a2e", "#150720", "#2d1545", "#3a1d58", "#4a2570", "#2d1545", "#f5e6ff", "#c9a8e8", "#6b4d8a", "#3a1d58", "#ff69b4", "#da70d6", "#87ceeb", [(0, "#ff69b4"), (0.33, "#da70d6"), (0.66, "#87ceeb"), (1, "#ff69b4")], [(0, "#12041d"), (0.5, "#1e0a2e"), (1, "#301748")], font="Inter", r_card="18px")
 )
 
-# 10. Steam Classic 2004
+# 10. Steam Classic 2004 (Stripe / Square borders)
 create_theme("steam-2004", 
     {"dark_variant": "steam-2004", "light_variant": "steam-2004", "name_en": "Steam Classic 2004", "name_ru": "Классический Steam 2004", "description_en": "Classic 2004 VGUI olive-green Steam launcher aesthetic theme.", "description_ru": "Классическая оливково-зеленая эстетика Steam 2004 (VGUI)."},
-    make_styles("standart", "#4c5844", "#3d4837", "#586650", "#64745c", "#6e8064", "#434e3c", "#e1ebd9", "#a8b89e", "#68785c", "#2f362a", "#849874", "#5a6850", "#a4ba92", [(0, "#849874"), (0.5, "#a4ba92"), (1, "#849874")], [(0, "#333b2e"), (0.5, "#4c5844"), (1, "#586650")], font="Tahoma", r_small="2px", r_large="4px", r_card="2px")
+    make_styles("standart", "#4c5844", "#3d4837", "#586650", "#64745c", "#6e8064", "#434e3c", "#e1ebd9", "#a8b89e", "#68785c", "#2f362a", "#849874", "#5a6850", "#a4ba92", [(0, "#849874"), (0.5, "#a4ba92"), (1, "#849874")], [(0, "#333b2e"), (0.5, "#4c5844"), (1, "#586650")], font="Tahoma", r_small="2px", r_large="4px", r_card="2px", anim_type="stripe")
 )
 
-# 11. Steam Modern
+# 11. Steam Modern (Stripe / Square borders without rounded animation corners)
 create_theme("steam-modern", 
     {"dark_variant": "steam-modern", "light_variant": "steam-modern", "name_en": "Steam Modern", "name_ru": "Новый Steam", "description_en": "Modern Steam Client desktop aesthetic theme.", "description_ru": "Современная темно-синяя эстетика клиента Steam."},
-    make_styles("standart", "#171d25", "#10151c", "#1e2633", "#283548", "#314159", "#1e2633", "#f3f3f3", "#96a5b7", "#4a596e", "#2a374d", "#1a9fff", "#0078d4", "#66c0f4", [(0, "#1a9fff"), (0.5, "#66c0f4"), (1, "#1a9fff")], [(0, "#0e1218"), (0.5, "#171d25"), (1, "#1e2633")], r_card="18px")
+    make_styles("standart", "#171d25", "#10151c", "#1e2633", "#283548", "#314159", "#1e2633", "#f3f3f3", "#96a5b7", "#4a596e", "#2a374d", "#1a9fff", "#0078d4", "#66c0f4", [(0, "#1a9fff"), (0.5, "#66c0f4"), (1, "#1a9fff")], [(0, "#0e1218"), (0.5, "#171d25"), (1, "#1e2633")], font="Inter", r_small="4px", r_large="6px", r_card="4px", anim_type="stripe")
 )
 
-print("UPDATED ALL 11 THEMES WITH PERFECT ROUNDED CORNERS AND STUNNING BACKGROUND GRADIENTS!")
+print("UPDATED STEAM MODERN WITH RECTANGULAR STRIPE ANIMATION BORDERS!")

@@ -53,9 +53,9 @@ SOURCE_CORNER = {
 }
 
 font_family = "Inter"
-border_radius_small = "8px"
-border_radius_large = "14px"
-border_radius_card = "18px"
+border_radius_small = "4px"
+border_radius_large = "6px"
+border_radius_card = "4px"
 
 LIBRARY_LAYOUT_MODE = "grid"
 DETAIL_PAGE_LAYOUT_MODE = "full"
@@ -97,7 +97,7 @@ GAME_CARD_ANIMATION = {
     "gradient_anim_duration": 3000,
     "gradient_start_angle": 360,
     "gradient_end_angle": 0,
-    "card_animation_type": "gradient",
+    "card_animation_type": "stripe",
     "fill_color": color_accent,
     "fill_alpha": 90,
     "stripe_color": color_accent,
