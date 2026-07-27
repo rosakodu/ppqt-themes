@@ -36,7 +36,10 @@ color_cover_frame_bg = "#44475a"
 
 LIBRARY_WIDGET_STYLE = f"""
     QWidget {{
-        background-color: #282a36;
+        background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+            stop:0 #191a21,
+            stop:0.5 #282a36,
+            stop:1 #383a59);
         border-radius: 0px;
     }}
 """
@@ -52,15 +55,16 @@ SOURCE_CORNER = {
 font_family = "Inter"
 border_radius_small = "8px"
 border_radius_large = "14px"
-border_radius_card = "12px"
+border_radius_card = "18px"
 
 LIBRARY_LAYOUT_MODE = "grid"
 DETAIL_PAGE_LAYOUT_MODE = "full"
 DETAIL_PAGE_BG_MODE = "gradient"
 
 DETAIL_PAGE_GRADIENT = [
-    {"position": 0, "color": "#282a36"},
-    {"position": 1, "color": "#282a36"},
+    {"position": 0, "color": "#191a21"},
+    {"position": 0.5, "color": "#282a36"},
+    {"position": 1, "color": "#383a59"}
 ]
 
 PRELOADER = {

@@ -36,7 +36,10 @@ color_cover_frame_bg = "#2d1545"
 
 LIBRARY_WIDGET_STYLE = f"""
     QWidget {{
-        background-color: #1e0a2e;
+        background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+            stop:0 #12041d,
+            stop:0.5 #1e0a2e,
+            stop:1 #301748);
         border-radius: 0px;
     }}
 """
@@ -50,17 +53,18 @@ SOURCE_CORNER = {
 }
 
 font_family = "Inter"
-border_radius_small = "12px"
-border_radius_large = "20px"
-border_radius_card = "16px"
+border_radius_small = "8px"
+border_radius_large = "14px"
+border_radius_card = "18px"
 
 LIBRARY_LAYOUT_MODE = "grid"
 DETAIL_PAGE_LAYOUT_MODE = "full"
 DETAIL_PAGE_BG_MODE = "gradient"
 
 DETAIL_PAGE_GRADIENT = [
-    {"position": 0, "color": "#1e0a2e"},
-    {"position": 1, "color": "#1e0a2e"},
+    {"position": 0, "color": "#12041d"},
+    {"position": 0.5, "color": "#1e0a2e"},
+    {"position": 1, "color": "#301748"}
 ]
 
 PRELOADER = {

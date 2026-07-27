@@ -1,45 +1,45 @@
 THEME_INHERITS = "standart"
 
-# === Nord Core Palette ===
-color_accent = "#88c0d0"        # Nord8 (Frost)
-color_accent_dark = "#5e81ac"   # Nord10 (Frost Dark)
-color_accent_blue = "#81a1c1"   # Nord9 (Frost Blue)
+color_accent = "#88c0d0"
+color_accent_dark = "#5e81ac"
+color_accent_blue = "#81a1c1"
 color_preloader = "#88c0d0"
-color_bg = "#2e3440"            # Nord0 (Polar Night)
-color_bg_darker = "#242933"     # Darker Polar Night
-color_surface = "#3b4252"       # Nord1 (Polar Night Light)
-color_surface_elevated = "#434c5e" # Nord2
-color_surface_hover = "#4c566a"  # Nord3
+color_bg = "#2e3440"
+color_bg_darker = "#242933"
+color_surface = "#3b4252"
+color_surface_elevated = "#434c5e"
+color_surface_hover = "#4c566a"
 color_card_bg = "#3b4252"
-color_text = "#eceff4"          # Nord6 (Snow Storm)
-color_text_muted = "#d8dee9"    # Nord4
+color_text = "#eceff4"
+color_text_muted = "#d8dee9"
 color_disabled_text = "#4c566a"
-color_border = "#4c566a"        # Nord3
+color_border = "#4c566a"
 
-# === Widget & Navigation Colors ===
 color_nav_inactive = "#d8dee9"
 color_separator = "#4c566a"
 color_scrollbar_bg = "#242933"
 color_scrollbar_handle = "#4c566a"
 color_slider_handle = "#88c0d0"
 color_slider_groove_bg = "#3b4252"
-color_border_subtle = "rgba(236, 239, 244, 0.05)"
+color_border_subtle = "rgba(255, 255, 255, 0.05)"
 color_border_input = "#88c0d0"
 color_border_light = "#4c566a"
-color_border_faint = "rgba(236, 239, 244, 0.08)"
+color_border_faint = "rgba(255, 255, 255, 0.08)"
 color_border_focus = "#88c0d0"
 color_checkbox_unchecked_bg = "#3b4252"
 color_checkbox_hover_bg = "#434c5e"
 color_combo_disabled_bg = "#242933"
 color_combo_disabled_border = "#3b4252"
-color_overlay = "rgba(46, 52, 64, 0.9)"
-color_detail_overlay = "rgba(46, 52, 64, 0.6)"
-color_cover_frame_bg = "rgba(59, 66, 82, 0.85)"
+color_overlay = "rgba(0,0,0,0.85)"
+color_detail_overlay = "rgba(0,0,0,0.5)"
+color_cover_frame_bg = "#3b4252"
 
-# === Flat Background Style (No Gradients) ===
 LIBRARY_WIDGET_STYLE = f"""
     QWidget {{
-        background-color: {color_bg};
+        background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+            stop:0 #1b1f27,
+            stop:0.5 #2e3440,
+            stop:1 #3b4252);
         border-radius: 0px;
     }}
 """
@@ -55,24 +55,34 @@ SOURCE_CORNER = {
 font_family = "Inter"
 border_radius_small = "8px"
 border_radius_large = "14px"
-border_radius_card = "12px"
+border_radius_card = "18px"
 
 LIBRARY_LAYOUT_MODE = "grid"
 DETAIL_PAGE_LAYOUT_MODE = "full"
 DETAIL_PAGE_BG_MODE = "gradient"
 
 DETAIL_PAGE_GRADIENT = [
-    {"position": 0, "color": color_bg},
-    {"position": 1, "color": color_bg},
+    {"position": 0, "color": "#1b1f27"},
+    {"position": 0.5, "color": "#2e3440"},
+    {"position": 1, "color": "#3b4252"}
 ]
 
 PRELOADER = {
-    "style": "dots",
+    "style": "pulse",
+    "pulse_count": 3,
+    "pulse_max_radius": 42,
+    "pulse_speed": 2.2,
+    "pulse_color": color_accent,
     "dots_count": 8,
     "dots_radius": 36,
     "dots_dot_size": 5,
     "dots_speed": 3.0,
     "dots_color": color_accent,
+    "wave_width": 80,
+    "wave_amplitude": 15,
+    "wave_speed": 2.5,
+    "wave_line_width": 3,
+    "wave_color": color_accent,
 }
 
 GAME_CARD_ANIMATION = {
@@ -84,7 +94,7 @@ GAME_CARD_ANIMATION = {
     "pulse_max_border_width": 8,
     "thickness_anim_duration": 250,
     "pulse_anim_duration": 800,
-    "gradient_anim_duration": 2500,
+    "gradient_anim_duration": 3000,
     "gradient_start_angle": 360,
     "gradient_end_angle": 0,
     "card_animation_type": "gradient",
@@ -104,9 +114,8 @@ GAME_CARD_ANIMATION = {
     "scale_easing_curve_out": "InBack",
     "gradient_colors": [
         {"position": 0, "color": "#88c0d0"},
-        {"position": 0.33, "color": "#81a1c1"},
-        {"position": 0.66, "color": "#b48ead"},
-        {"position": 1, "color": "#88c0d0"},
+        {"position": 0.5, "color": "#81a1c1"},
+        {"position": 1, "color": "#88c0d0"}
     ],
     "detail_page_fade_duration": 350,
     "detail_page_slide_duration": 500,

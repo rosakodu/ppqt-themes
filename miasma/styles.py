@@ -1,45 +1,45 @@
 THEME_INHERITS = "standart"
 
-# === Official Miasma Palette (by xero / omarchytheme.com) ===
-color_accent = "#78824b"        # Olive Green (miasma accent)
-color_accent_dark = "#5f875f"   # Green (color2)
-color_accent_blue = "#c9a554"   # Gold (color6)
+color_accent = "#78824b"
+color_accent_dark = "#5f875f"
+color_accent_blue = "#c9a554"
 color_preloader = "#78824b"
-color_bg = "#222222"            # Background
-color_bg_darker = "#1a1a1a"     # Darker Base
-color_surface = "#2c2c2c"       # Surface
-color_surface_elevated = "#333333" # Elevated Surface
-color_surface_hover = "#3c3c3c"  # Hover Surface
+color_bg = "#222222"
+color_bg_darker = "#1a1a1a"
+color_surface = "#2c2c2c"
+color_surface_elevated = "#333333"
+color_surface_hover = "#3c3c3c"
 color_card_bg = "#2c2c2c"
-color_text = "#c2c2b0"          # Foreground (exact miasma)
-color_text_muted = "#8a8a7a"    # Muted Text (warm tint)
-color_disabled_text = "#666666" # color0
-color_border = "#444444"        # Border
+color_text = "#c2c2b0"
+color_text_muted = "#8a8a7a"
+color_disabled_text = "#666666"
+color_border = "#444444"
 
-# === Widget & Navigation Colors ===
 color_nav_inactive = "#8a8a7a"
 color_separator = "#444444"
 color_scrollbar_bg = "#1a1a1a"
-color_scrollbar_handle = "#685742"  # Brown (color1)
+color_scrollbar_handle = "#3c3c3c"
 color_slider_handle = "#78824b"
 color_slider_groove_bg = "#2c2c2c"
-color_border_subtle = "rgba(194, 194, 176, 0.05)"
+color_border_subtle = "rgba(255, 255, 255, 0.05)"
 color_border_input = "#78824b"
 color_border_light = "#444444"
-color_border_faint = "rgba(194, 194, 176, 0.08)"
+color_border_faint = "rgba(255, 255, 255, 0.08)"
 color_border_focus = "#78824b"
 color_checkbox_unchecked_bg = "#2c2c2c"
 color_checkbox_hover_bg = "#333333"
 color_combo_disabled_bg = "#1a1a1a"
 color_combo_disabled_border = "#2c2c2c"
-color_overlay = "rgba(34, 34, 34, 0.9)"
-color_detail_overlay = "rgba(34, 34, 34, 0.6)"
-color_cover_frame_bg = "rgba(44, 44, 44, 0.85)"
+color_overlay = "rgba(0,0,0,0.85)"
+color_detail_overlay = "rgba(0,0,0,0.5)"
+color_cover_frame_bg = "#2c2c2c"
 
-# === Flat Background Style (No Gradients) ===
 LIBRARY_WIDGET_STYLE = f"""
     QWidget {{
-        background-color: {color_bg};
+        background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+            stop:0 #181818,
+            stop:0.5 #22251d,
+            stop:1 #2a2e22);
         border-radius: 0px;
     }}
 """
@@ -53,21 +53,31 @@ SOURCE_CORNER = {
 }
 
 font_family = "Inter"
-border_radius_small = "6px"
-border_radius_large = "12px"
-border_radius_card = "10px"
+border_radius_small = "8px"
+border_radius_large = "14px"
+border_radius_card = "18px"
 
 LIBRARY_LAYOUT_MODE = "grid"
 DETAIL_PAGE_LAYOUT_MODE = "full"
 DETAIL_PAGE_BG_MODE = "gradient"
 
 DETAIL_PAGE_GRADIENT = [
-    {"position": 0, "color": color_bg},
-    {"position": 1, "color": color_bg},
+    {"position": 0, "color": "#181818"},
+    {"position": 0.5, "color": "#22251d"},
+    {"position": 1, "color": "#2a2e22"}
 ]
 
 PRELOADER = {
     "style": "wave",
+    "pulse_count": 3,
+    "pulse_max_radius": 42,
+    "pulse_speed": 2.2,
+    "pulse_color": color_accent,
+    "dots_count": 8,
+    "dots_radius": 36,
+    "dots_dot_size": 5,
+    "dots_speed": 3.0,
+    "dots_color": color_accent,
     "wave_width": 80,
     "wave_amplitude": 15,
     "wave_speed": 2.5,
@@ -95,8 +105,8 @@ GAME_CARD_ANIMATION = {
     "glow_base_alpha": 120,
     "glow_pulse_alpha": 80,
     "default_scale": 1.0,
-    "hover_scale": 1.04,
-    "focus_scale": 1.02,
+    "hover_scale": 1.05,
+    "focus_scale": 1.03,
     "scale_anim_duration": 200,
     "thickness_easing_curve": "OutBack",
     "thickness_easing_curve_out": "InBack",
@@ -104,9 +114,8 @@ GAME_CARD_ANIMATION = {
     "scale_easing_curve_out": "InBack",
     "gradient_colors": [
         {"position": 0, "color": "#78824b"},
-        {"position": 0.33, "color": "#bb7744"},
-        {"position": 0.66, "color": "#c9a554"},
-        {"position": 1, "color": "#78824b"},
+        {"position": 0.5, "color": "#bb7744"},
+        {"position": 1, "color": "#c9a554"}
     ],
     "detail_page_fade_duration": 350,
     "detail_page_slide_duration": 500,
