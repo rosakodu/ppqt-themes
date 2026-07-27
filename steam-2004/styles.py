@@ -56,6 +56,7 @@ font_family = "Tahoma"
 border_radius_small = "2px"
 border_radius_large = "4px"
 border_radius_card = "2px"
+border_radius_badge = "6px"
 
 LIBRARY_LAYOUT_MODE = "grid"
 DETAIL_PAGE_LAYOUT_MODE = "full"

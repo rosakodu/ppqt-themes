@@ -56,6 +56,7 @@ font_family = "Inter"
 border_radius_small = "8px"
 border_radius_large = "14px"
 border_radius_card = "18px"
+border_radius_badge = "6px"
 
 LIBRARY_LAYOUT_MODE = "grid"
 DETAIL_PAGE_LAYOUT_MODE = "full"
