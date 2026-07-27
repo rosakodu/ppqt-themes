@@ -238,13 +238,13 @@ create_theme("hannah-montana",
 # 10. Steam Classic 2004
 create_theme("steam-2004", 
     {"dark_variant": "steam-2004", "light_variant": "steam-2004", "name_en": "Steam Classic 2004", "name_ru": "Классический Steam 2004", "description_en": "Classic 2004 VGUI olive-green Steam launcher aesthetic theme.", "description_ru": "Классическая оливково-зеленая эстетика Steam 2004 (VGUI)."},
-    make_styles("standart", "#4c5844", "#3d4837", "#586650", "#64745c", "#6e8064", "#434e3c", "#e1ebd9", "#a8b89e", "#68785c", "#2f362a", "#849874", "#5a6850", "#a4ba92", [(0, "#849874"), (0.5, "#a4ba92"), (1, "#849874")], [(0, "#333b2e"), (0.5, "#4c5844"), (1, "#586650")], font="Tahoma", r_small="2px", r_large="4px", r_card="2px", r_badge="6px", anim_type="stripe")
+    make_styles("standart", "#4c5844", "#3d4837", "#586650", "#64745c", "#6e8064", "#434e3c", "#e1ebd9", "#a8b89e", "#68785c", "#2f362a", "#849874", "#5a6850", "#a4ba92", [(0, "#849874"), (0.5, "#a4ba92"), (1, "#849874")], [(0, "#333b2e"), (0.5, "#4c5844"), (1, "#586650")], font="Tahoma", r_small="8px", r_large="14px", r_card="18px", r_badge="6px", anim_type="gradient")
 )
 
 # 11. Steam Modern
 create_theme("steam-modern", 
     {"dark_variant": "steam-modern", "light_variant": "steam-modern", "name_en": "Steam Modern", "name_ru": "Новый Steam", "description_en": "Modern Steam Client desktop aesthetic theme.", "description_ru": "Современная темно-синяя эстетика клиента Steam."},
-    make_styles("standart", "#171d25", "#10151c", "#1e2633", "#283548", "#314159", "#1e2633", "#f3f3f3", "#96a5b7", "#4a596e", "#2a374d", "#1a9fff", "#0078d4", "#66c0f4", [(0, "#1a9fff"), (0.5, "#66c0f4"), (1, "#1a9fff")], [(0, "#0e1218"), (0.5, "#171d25"), (1, "#1e2633")], font="Inter", r_small="4px", r_large="6px", r_card="4px", r_badge="6px", anim_type="stripe")
+    make_styles("standart", "#171d25", "#10151c", "#1e2633", "#283548", "#314159", "#1e2633", "#f3f3f3", "#96a5b7", "#4a596e", "#2a374d", "#1a9fff", "#0078d4", "#66c0f4", [(0, "#1a9fff"), (0.5, "#66c0f4"), (1, "#1a9fff")], [(0, "#0e1218"), (0.5, "#171d25"), (1, "#1e2633")], font="Inter", r_small="8px", r_large="14px", r_card="18px", r_badge="6px", anim_type="gradient")
 )
 
-print("UPDATED ALL THEMES WITH UNIFORM BADGE CORNER ROUNDING (6px)!")
+print("FIXED ALL THEME CARD CORNERS (18px) TO PERFECTLY MATCH INNER 15px COVER ROUNDING!")
