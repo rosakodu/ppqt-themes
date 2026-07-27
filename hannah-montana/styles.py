@@ -1,51 +1,52 @@
 THEME_INHERITS = "standart"
 
 color_accent = "#ff69b4"
-color_accent_dark = "#da70d6"
-color_accent_blue = "#87ceeb"
+color_accent_dark = "#ff1493"
+color_accent_blue = "#ff85c0"
 color_preloader = "#ff69b4"
-color_bg = "#1e0a2e"
-color_bg_darker = "#150720"
-color_surface = "#2d1545"
-color_surface_elevated = "#3a1d58"
-color_surface_hover = "#4a2570"
-color_card_bg = "#2d1545"
-color_text = "#f5e6ff"
-color_text_muted = "#c9a8e8"
-color_disabled_text = "#6b4d8a"
-color_border = "#3a1d58"
+color_bg = "#4a0e5c"
+color_bg_darker = "#2d0638"
+color_surface = "#6a1482"
+color_surface_elevated = "#7d1999"
+color_surface_hover = "#9420b3"
+color_card_bg = "#6a1482"
+color_text = "#ffe6f7"
+color_text_muted = "#fbcfe8"
+color_disabled_text = "#9c57b8"
+color_border = "#7d1999"
 
-color_nav_inactive = "#c9a8e8"
-color_separator = "#3a1d58"
-color_scrollbar_bg = "#150720"
-color_scrollbar_handle = "#4a2570"
+color_nav_inactive = "#fbcfe8"
+color_separator = "#7d1999"
+color_scrollbar_bg = "#2d0638"
+color_scrollbar_handle = "#9420b3"
 color_slider_handle = "#ff69b4"
-color_slider_groove_bg = "#2d1545"
+color_slider_groove_bg = "#6a1482"
 color_border_subtle = "rgba(255, 255, 255, 0.05)"
 color_border_input = "#ff69b4"
-color_border_light = "#3a1d58"
+color_border_light = "#7d1999"
 color_border_faint = "rgba(255, 255, 255, 0.08)"
 color_border_focus = "#ff69b4"
-color_checkbox_unchecked_bg = "#2d1545"
-color_checkbox_hover_bg = "#3a1d58"
-color_combo_disabled_bg = "#150720"
-color_combo_disabled_border = "#2d1545"
+color_checkbox_unchecked_bg = "#6a1482"
+color_checkbox_hover_bg = "#7d1999"
+color_combo_disabled_bg = "#2d0638"
+color_combo_disabled_border = "#6a1482"
 color_overlay = "rgba(0,0,0,0.85)"
 color_detail_overlay = "rgba(0,0,0,0.5)"
-color_cover_frame_bg = "#2d1545"
+color_cover_frame_bg = "#6a1482"
 
 LIBRARY_WIDGET_STYLE = f"""
     QWidget {{
         background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
-            stop:0 #12041d,
-            stop:0.5 #1e0a2e,
-            stop:1 #301748);
+            stop:0 #290430,
+            stop:0.4 #4d0a5c,
+            stop:0.7 #731285,
+            stop:1 #94188a);
         border-radius: 0px;
     }}
 """
 
 SOURCE_CORNER = {
-    "ribbon_color": "#2d1545",
+    "ribbon_color": "#6a1482",
     "ribbon_fold_color": "#00000096",
     "size_ratio": 0.28,
     "min_size": 54,
@@ -63,9 +64,10 @@ DETAIL_PAGE_LAYOUT_MODE = "full"
 DETAIL_PAGE_BG_MODE = "gradient"
 
 DETAIL_PAGE_GRADIENT = [
-    {"position": 0, "color": "#12041d"},
-    {"position": 0.5, "color": "#1e0a2e"},
-    {"position": 1, "color": "#301748"}
+    {"position": 0, "color": "#290430"},
+    {"position": 0.4, "color": "#4d0a5c"},
+    {"position": 0.7, "color": "#731285"},
+    {"position": 1, "color": "#94188a"}
 ]
 
 PRELOADER = {
@@ -115,8 +117,8 @@ GAME_CARD_ANIMATION = {
     "scale_easing_curve_out": "InBack",
     "gradient_colors": [
         {"position": 0, "color": "#ff69b4"},
-        {"position": 0.33, "color": "#da70d6"},
-        {"position": 0.66, "color": "#87ceeb"},
+        {"position": 0.33, "color": "#ff1493"},
+        {"position": 0.66, "color": "#ff85c0"},
         {"position": 1, "color": "#ff69b4"}
     ],
     "detail_page_fade_duration": 350,

@@ -229,10 +229,10 @@ create_theme("everforest",
     make_styles("standart", "#2d353b", "#272e33", "#343f44", "#3d484d", "#475258", "#343f44", "#d3c6aa", "#9da9a0", "#7a8478", "#475258", "#a7c080", "#83c092", "#7fbbb3", [(0, "#a7c080"), (0.5, "#83c092"), (1, "#a7c080")], [(0, "#1e2529"), (0.5, "#2d353b"), (1, "#343f44")], r_card="18px", r_badge="6px", preloader_style="dots")
 )
 
-# 9. Hannah Montana
+# 9. Hannah Montana (Vibrant Glamorous Pink Theme)
 create_theme("hannah-montana", 
-    {"dark_variant": "hannah-montana", "light_variant": "hannah-montana", "name_en": "Hannah Montana", "name_ru": "Ханна Монтана", "description_en": "Vibrant pink-purple Hannah Montana aesthetic theme.", "description_ru": "Яркая розово-фиолетовая тема в стиле Ханны Монтаны."},
-    make_styles("standart", "#1e0a2e", "#150720", "#2d1545", "#3a1d58", "#4a2570", "#2d1545", "#f5e6ff", "#c9a8e8", "#6b4d8a", "#3a1d58", "#ff69b4", "#da70d6", "#87ceeb", [(0, "#ff69b4"), (0.33, "#da70d6"), (0.66, "#87ceeb"), (1, "#ff69b4")], [(0, "#12041d"), (0.5, "#1e0a2e"), (1, "#301748")], font="Inter", r_card="18px", r_badge="6px")
+    {"dark_variant": "hannah-montana", "light_variant": "hannah-montana", "name_en": "Hannah Montana", "name_ru": "Ханна Монтана", "description_en": "Vibrant glamorous pink Hannah Montana aesthetic theme.", "description_ru": "Яркая гламурная розово-пурпурная тема в стиле Ханны Монтаны."},
+    make_styles("standart", "#4a0e5c", "#2d0638", "#6a1482", "#7d1999", "#9420b3", "#6a1482", "#ffe6f7", "#fbcfe8", "#9c57b8", "#7d1999", "#ff69b4", "#ff1493", "#ff85c0", [(0, "#ff69b4"), (0.33, "#ff1493"), (0.66, "#ff85c0"), (1, "#ff69b4")], [(0, "#290430"), (0.4, "#4d0a5c"), (0.7, "#731285"), (1, "#94188a")], font="Inter", r_card="18px", r_badge="6px")
 )
 
 # 10. Steam Classic 2004
@@ -247,4 +247,4 @@ create_theme("steam-modern",
     make_styles("standart", "#171d25", "#10151c", "#1e2633", "#283548", "#314159", "#1e2633", "#f3f3f3", "#96a5b7", "#4a596e", "#2a374d", "#1a9fff", "#0078d4", "#66c0f4", [(0, "#1a9fff"), (0.5, "#66c0f4"), (1, "#1a9fff")], [(0, "#0e1218"), (0.5, "#171d25"), (1, "#1e2633")], font="Inter", r_small="8px", r_large="14px", r_card="18px", r_badge="6px", anim_type="gradient")
 )
 
-print("FIXED ALL THEME CARD CORNERS (18px) TO PERFECTLY MATCH INNER 15px COVER ROUNDING!")
+print("UPDATED HANNAH MONTANA WITH STUNNING VIBRANT PINK BACKGROUND GRADIENT!")
