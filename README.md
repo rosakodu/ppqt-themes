@@ -50,9 +50,9 @@ cp -r ppqt-themes/* ~/.local/share/PortProtonQt/themes/
 
 ### Miasma
 
-Органическая тёмно-оливковая палитра от xero с точными цветами из Omarchy Themes.
+Органическая тёмно-оливковая палитра от oldjobobo с точными цветами из Omarchy Themes.
 
-> 🔗 Тема сделана на основе [Miasma (xero)](https://omarchytheme.com/themes/miasma-oldjobobo/)
+> 🔗 Тема сделана на основе [Miasma (oldjobobo)](https://omarchytheme.com/themes/miasma-oldjobobo/)
 
 ![Miasma Library](miasma/images/screenshots/1_library.png)
 ![Miasma Detail](miasma/images/screenshots/2_detail.png)
