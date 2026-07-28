@@ -130,15 +130,6 @@ GAME_CARD_ANIMATION = {
 
 # === Button Icons & Dynamic State Colors ===
 ICON_COLORS = {
-    # Main brand & feature icons
-    "tray_portproton": color_accent,
-    "badge_portproton": color_accent,
-    "menu": color_accent,
-    "play": color_accent,
-    "addgame": color_accent,
-    "star": color_accent,
-
-    # Dynamic state overrides (wildcard) for crisp contrast on interaction
     "*_hover": color_text,
     "*_pressed": color_text,
     "*_focused": color_text,
