@@ -31,7 +31,7 @@ def make_styles(inherits, bg, bg_darker, surface, surface_elevated, surface_hove
     scrollbar_bg = bg_darker
     scrollbar_handle = surface_hover
     slider_handle = accent
-    slider_groove_bg = surface
+    slider_groove_bg = border  # High-contrast visible track for QSlider
     border_subtle = "rgba(255, 255, 255, 0.05)"
     border_input = accent
     border_light = border
@@ -193,7 +193,7 @@ create_theme("catppuccin",
     make_styles("standart", "#1e1e2e", "#181825", "#313244", "#45475a", "#585b70", "#313244", "#cdd6f4", "#a6adc8", "#585b70", "#45475a", "#cba6f7", "#b4befe", "#89b4fa", [(0, "#cba6f7"), (0.5, "#89b4fa"), (1, "#cba6f7")], [(0, "#11111b"), (0.5, "#1e1e2e"), (1, "#313244")], r_card="18px", r_badge="6px")
 )
 
-# 3. Miasma
+# 3. Miasma (xero official palette)
 create_theme("miasma",
     {"dark_variant": "miasma", "light_variant": "miasma", "name_en": "Miasma", "name_ru": "Miasma", "description_en": "Organic dark olive Miasma theme by xero.", "description_ru": "Органическая тёмно-оливковая тема Miasma."},
     make_styles("standart", "#222222", "#1a1a1a", "#2c2c2c", "#333333", "#3c3c3c", "#2c2c2c", "#c2c2b0", "#8a8a7a", "#666666", "#444444", "#78824b", "#5f875f", "#c9a554", [(0, "#78824b"), (0.5, "#bb7744"), (1, "#c9a554")], [(0, "#181818"), (0.5, "#22251d"), (1, "#2a2e22")], r_card="18px", r_badge="6px", preloader_style="wave")
@@ -211,40 +211,34 @@ create_theme("rose-pine",
     make_styles("standart", "#191724", "#1f1d2e", "#26233a", "#2a2837", "#393552", "#26233a", "#e0def4", "#908caa", "#6e6a86", "#393552", "#c4a7e7", "#9ccfd8", "#31748f", [(0, "#c4a7e7"), (0.5, "#ebbcba"), (1, "#c4a7e7")], [(0, "#12101d"), (0.5, "#191724"), (1, "#26233a")], r_card="18px", r_badge="6px", preloader_style="dots")
 )
 
-# 6. Dracula
-create_theme("dracula", 
-    {"dark_variant": "dracula", "light_variant": "dracula", "name_en": "Dracula", "name_ru": "Dracula", "description_en": "Famous dark purple theme for PortProtonQt.", "description_ru": "Легендарная тёмно-фиолетовая тема Dracula."},
-    make_styles("standart", "#282a36", "#21222c", "#44475a", "#4d5066", "#6272a4", "#44475a", "#f8f8f2", "#bfbfb9", "#6272a4", "#44475a", "#bd93f9", "#ff79c6", "#8be9fd", [(0, "#bd93f9"), (0.33, "#ff79c6"), (0.66, "#8be9fd"), (1, "#bd93f9")], [(0, "#191a21"), (0.5, "#282a36"), (1, "#383a59")], r_card="18px", r_badge="6px")
-)
-
-# 7. Kanagawa
+# 6. Kanagawa
 create_theme("kanagawa", 
     {"dark_variant": "kanagawa", "light_variant": "kanagawa", "name_en": "Kanagawa", "name_ru": "Kanagawa", "description_en": "Dark theme inspired by Katsushika Hokusai artworks.", "description_ru": "Эстетичная тёмная тема в японском стиле Kanagawa."},
     make_styles("standart", "#1f1f28", "#16161d", "#2a2a37", "#363646", "#54546d", "#2a2a37", "#dcd7ba", "#c8c093", "#727169", "#363646", "#7e9cd8", "#957fb8", "#7fb4ca", [(0, "#7e9cd8"), (0.5, "#957fb8"), (1, "#7e9cd8")], [(0, "#15151c"), (0.5, "#1f1f28"), (1, "#2a2a37")], r_card="18px", r_badge="6px", preloader_style="wave")
 )
 
-# 8. Everforest
+# 7. Everforest
 create_theme("everforest", 
     {"dark_variant": "everforest", "light_variant": "everforest", "name_en": "Everforest", "name_ru": "Everforest", "description_en": "Warm, natural green forest palette theme.", "description_ru": "Уютная природная зелёная тема Everforest."},
     make_styles("standart", "#2d353b", "#272e33", "#343f44", "#3d484d", "#475258", "#343f44", "#d3c6aa", "#9da9a0", "#7a8478", "#475258", "#a7c080", "#83c092", "#7fbbb3", [(0, "#a7c080"), (0.5, "#83c092"), (1, "#a7c080")], [(0, "#1e2529"), (0.5, "#2d353b"), (1, "#343f44")], r_card="18px", r_badge="6px", preloader_style="dots")
 )
 
-# 9. Hannah Montana (Vibrant Glamorous Pink Theme)
+# 8. Hannah Montana (Vibrant Glamorous Pink Theme)
 create_theme("hannah-montana", 
     {"dark_variant": "hannah-montana", "light_variant": "hannah-montana", "name_en": "Hannah Montana", "name_ru": "Ханна Монтана", "description_en": "Vibrant glamorous pink Hannah Montana aesthetic theme.", "description_ru": "Яркая гламурная розово-пурпурная тема в стиле Ханны Монтаны."},
     make_styles("standart", "#4a0e5c", "#2d0638", "#6a1482", "#7d1999", "#9420b3", "#6a1482", "#ffe6f7", "#fbcfe8", "#9c57b8", "#7d1999", "#ff69b4", "#ff1493", "#ff85c0", [(0, "#ff69b4"), (0.33, "#ff1493"), (0.66, "#ff85c0"), (1, "#ff69b4")], [(0, "#290430"), (0.4, "#4d0a5c"), (0.7, "#731285"), (1, "#94188a")], font="Inter", r_card="18px", r_badge="6px")
 )
 
-# 10. Steam Classic 2004
+# 9. Steam Classic 2004
 create_theme("steam-2004", 
     {"dark_variant": "steam-2004", "light_variant": "steam-2004", "name_en": "Steam Classic 2004", "name_ru": "Классический Steam 2004", "description_en": "Classic 2004 VGUI olive-green Steam launcher aesthetic theme.", "description_ru": "Классическая оливково-зеленая эстетика Steam 2004 (VGUI)."},
     make_styles("standart", "#4c5844", "#3d4837", "#586650", "#64745c", "#6e8064", "#434e3c", "#e1ebd9", "#a8b89e", "#68785c", "#2f362a", "#849874", "#5a6850", "#a4ba92", [(0, "#849874"), (0.5, "#a4ba92"), (1, "#849874")], [(0, "#333b2e"), (0.5, "#4c5844"), (1, "#586650")], font="Tahoma", r_small="8px", r_large="14px", r_card="18px", r_badge="6px", anim_type="gradient")
 )
 
-# 11. Steam Modern
+# 10. Steam Modern
 create_theme("steam-modern", 
     {"dark_variant": "steam-modern", "light_variant": "steam-modern", "name_en": "Steam Modern", "name_ru": "Новый Steam", "description_en": "Modern Steam Client desktop aesthetic theme.", "description_ru": "Современная темно-синяя эстетика клиента Steam."},
     make_styles("standart", "#171d25", "#10151c", "#1e2633", "#283548", "#314159", "#1e2633", "#f3f3f3", "#96a5b7", "#4a596e", "#2a374d", "#1a9fff", "#0078d4", "#66c0f4", [(0, "#1a9fff"), (0.5, "#66c0f4"), (1, "#1a9fff")], [(0, "#0e1218"), (0.5, "#171d25"), (1, "#1e2633")], font="Inter", r_small="8px", r_large="14px", r_card="18px", r_badge="6px", anim_type="gradient")
 )
 
-print("UPDATED HANNAH MONTANA WITH STUNNING VIBRANT PINK BACKGROUND GRADIENT!")
+print("UPDATED ALL 10 REMAINING THEMES WITH HIGH-CONTRAST VISIBLE SLIDER TRACKS!")

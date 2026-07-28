@@ -13,7 +13,6 @@
 | **Miasma** | Органическая оливково-зеленая палитра |
 | **Tokyo Night** | Неоновые ночные огни Токио |
 | **Rose Pine** | Мягкая пастельная палитра Rosé Pine |
-| **Dracula** | Классическая фиолетовая палитра Дракулы |
 | **Kanagawa** | Японская волна — глубокие сине-фиолетовые тона |
 | **Everforest** | Уютная природная зеленая палитра |
 
@@ -61,7 +60,6 @@ theme-name/
 - [Miasma](https://github.com/xero/miasma.nvim) — Dark, organic color scheme by xero
 - [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) — Night city lights theme
 - [Rosé Pine](https://rosepinetheme.com/) — All natural pine, faux fur and a bit of soho vibes
-- [Dracula](https://draculatheme.com/) — Dark theme for everything
 - [Kanagawa](https://github.com/rebelot/kanagawa.nvim) — Dark theme inspired by Katsushika Hokusai
 - [Everforest](https://github.com/sainnhe/everforest) — Green-based warm color scheme
 - [Omarchy Themes](https://omarchythemes.com/) — Community themes for Omarchy
