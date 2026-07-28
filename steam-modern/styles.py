@@ -130,8 +130,8 @@ GAME_CARD_ANIMATION = {
 
 # === Button Icons & Dynamic State Colors ===
 ICON_COLORS = {
-    "*_hover": color_text,
-    "*_pressed": color_text,
-    "*_focused": color_text,
+    "*_hover": color_bg,
+    "*_pressed": color_bg_darker,
+    "*_focused": color_bg,
     "*_disabled": color_disabled_text,
 }
