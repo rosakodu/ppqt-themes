@@ -10,7 +10,8 @@
 |------|-------|
 | **Nord** | Арктическая сине-серая палитра |
 | **Catppuccin** | Пастельная уютная палитра (Mocha) |
-| **Miasma** | Органическая оливково-зеленая палитра |
+| **Miasma** | Органическая оливково-зеленая палитра xero |
+| **Felix** | Минималистичная черная тема с оранжевым акцентом (TyRichards) |
 | **Tokyo Night** | Неоновые ночные огни Токио |
 | **Rose Pine** | Мягкая пастельная палитра Rosé Pine |
 | **Kanagawa** | Японская волна — глубокие сине-фиолетовые тона |
@@ -40,7 +41,7 @@
 ```bash
 git clone https://github.com/rosakodu/ppqt-themes.git
 cp -r ppqt-themes/nord ~/.local/share/PortProtonQt/themes/
-cp -r ppqt-themes/catppuccin ~/.local/share/PortProtonQt/themes/
+cp -r ppqt-themes/felix ~/.local/share/PortProtonQt/themes/
 ```
 
 ## 📁 Структура темы
@@ -58,6 +59,7 @@ theme-name/
 - [Nord](https://www.nordtheme.com/) — Arctic, north-bluish color palette
 - [Catppuccin](https://github.com/catppuccin/catppuccin) — Soothing pastel theme
 - [Miasma](https://github.com/xero/miasma.nvim) — Dark, organic color scheme by xero
+- [Felix](https://omarchytheme.com/themes/felix/) — Minimalist black & orange theme by TyRichards
 - [Tokyo Night](https://github.com/enkia/tokyo-night-vscode-theme) — Night city lights theme
 - [Rosé Pine](https://rosepinetheme.com/) — All natural pine, faux fur and a bit of soho vibes
 - [Kanagawa](https://github.com/rebelot/kanagawa.nvim) — Dark theme inspired by Katsushika Hokusai

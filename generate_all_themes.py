@@ -31,7 +31,7 @@ def make_styles(inherits, bg, bg_darker, surface, surface_elevated, surface_hove
     scrollbar_bg = bg_darker
     scrollbar_handle = surface_hover
     slider_handle = accent
-    slider_groove_bg = border  # High-contrast visible track for QSlider
+    slider_groove_bg = border
     border_subtle = "rgba(255, 255, 255, 0.05)"
     border_input = accent
     border_light = border
@@ -241,4 +241,10 @@ create_theme("steam-modern",
     make_styles("standart", "#171d25", "#10151c", "#1e2633", "#283548", "#314159", "#1e2633", "#f3f3f3", "#96a5b7", "#4a596e", "#2a374d", "#1a9fff", "#0078d4", "#66c0f4", [(0, "#1a9fff"), (0.5, "#66c0f4"), (1, "#1a9fff")], [(0, "#0e1218"), (0.5, "#171d25"), (1, "#1e2633")], font="Inter", r_small="8px", r_large="14px", r_card="18px", r_badge="6px", anim_type="gradient")
 )
 
-print("UPDATED ALL 10 REMAINING THEMES WITH HIGH-CONTRAST VISIBLE SLIDER TRACKS!")
+# 11. Felix (Minimalist Deep Work Theme with Orange Accent)
+create_theme("felix", 
+    {"dark_variant": "felix", "light_variant": "felix", "name_en": "Felix", "name_ru": "Felix", "description_en": "Minimalist black & orange Omarchy theme by TyRichards.", "description_ru": "Минималистичная чёрная тема с оранжевым акцентом в стиле Felix (Omarchy)."},
+    make_styles("standart", "#000000", "#0a0a0a", "#121212", "#1a1a1a", "#262626", "#121212", "#e7e9ea", "#9e9e9e", "#626262", "#333333", "#ff8852", "#d96b36", "#ffa375", [(0, "#ff8852"), (0.5, "#ffa375"), (1, "#ff8852")], [(0, "#000000"), (0.5, "#121212"), (1, "#1e1e1e")], font="Inter", r_card="18px", r_badge="6px")
+)
+
+print("CREATED FELIX THEME SUCCESSFULLY!")
