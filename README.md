@@ -1,6 +1,6 @@
 # 🎨 PortProtonQt Themes
 
-Коллекция красивых тем для [PortProtonQt](https://github.com/Linux-Gaming/PortProtonQt) — Linux-лаунчера для Windows-игр через Proton/Wine.
+Коллекция красивых тем для [PortProtonQt](https://git.linux-gaming.ru/Linux-Gaming) — Linux-лаунчера для Windows-игр через Proton/Wine.
 
 ---
 

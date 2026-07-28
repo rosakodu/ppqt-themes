@@ -132,8 +132,68 @@ GAME_CARD_ANIMATION = {
 }
 
 ICON_COLORS = {
+    # Main action & status icons
     "tray_portproton": color_accent,
-    "*_hover": color_text,
-    "*_pressed": color_accent,
-    "*_focused": color_accent,
+    "badge_portproton": color_accent,
+    "menu": color_accent,
+    "addgame": color_accent,
+    "play": color_accent,
+    "stop": color_accent_dark,
+    "apply": color_accent,
+    "check": color_accent,
+    "desktop": color_accent_blue,
+    "update": color_accent_blue,
+    "star": color_accent,
+    "settings": color_accent,
+    "edit": color_accent,
+    "folder": color_accent_blue,
+    "search": color_accent,
+    
+    # Navigation row (top row - arrows)
+    "back": color_accent,
+    "down": color_accent,
+    "up": color_accent,
+    "dpad_left": color_accent,
+    "dpad_right": color_accent,
+    
+    # Keyboard shortcut badges (bottom row)
+    "key_enter": color_accent,
+    "key_backspace": color_accent,
+    "key_e": color_accent,
+    "key_context": color_accent,
+    "key_f11": color_accent,
+    "key_f5": color_accent,
+    "key_+": color_accent,
+    "key_left": color_accent,
+    "key_right": color_accent,
+    
+    # Gamepad controller buttons (Xbox & PlayStation)
+    "xbox_a": color_accent,
+    "xbox_b": color_accent,
+    "xbox_x": color_accent,
+    "xbox_y": color_accent,
+    "xbox_lb": color_accent,
+    "xbox_lt": color_accent,
+    "xbox_rb": color_accent,
+    "xbox_rt": color_accent,
+    "xbox_start": color_accent,
+    "xbox_view": color_accent,
+    "xbox_xbox": color_accent,
+    "ps_circle": color_accent,
+    "ps_cross": color_accent,
+    "ps_square": color_accent,
+    "ps_triangle": color_accent,
+    "ps_l1": color_accent,
+    "ps_l2": color_accent,
+    "ps_r1": color_accent,
+    "ps_r2": color_accent,
+    "ps_options": color_accent,
+    "ps_share": color_accent,
+    "ps_ps": color_accent,
+
+    # Dynamic states
+    "*_hover": color_accent,
+    "*_pressed": color_accent_dark,
+    "*_focused": color_accent_blue,
+    "*_disabled": color_disabled_text,
 }
