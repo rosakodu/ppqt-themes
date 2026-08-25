@@ -10,6 +10,7 @@ color_surface = "#2a2a37"
 color_surface_elevated = "#363646"
 color_surface_hover = "#54546d"
 color_card_bg = "#2a2a37"
+color_text_accent_hover = "#1f1f28"
 color_text = "#dcd7ba"
 color_text_muted = "#c8c093"
 color_disabled_text = "#727169"
@@ -135,104 +136,3 @@ ICON_COLORS = {
     "*_focused": color_bg,
     "*_disabled": color_disabled_text,
 }
-
-# === Custom Combobox Style Overrides ===
-COMBOBOX_STYLE = f"""
-    QComboBox {{
-        background: {color_surface};
-        border: {border_medium} transparent;
-        border-radius: {border_radius_small};
-        padding-left: 12px;
-        height: 34px;
-        color: {color_text};
-        font-family: '{font_family}';
-        font-size: {font_size_normal};
-        min-width: 120px;
-        combobox-popup: 0;
-    }}
-    QComboBox:on {{
-        background: {color_bg};
-        border: {border_medium} {color_accent};
-        border-bottom-style: none;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }}
-    QComboBox:hover {{
-        border: {border_medium} {color_accent};
-        background: {color_accent};
-        color: {color_bg};
-    }}
-    /* Focus state */
-    QComboBox:focus {{
-        border: {border_medium} {color_accent};
-        background-color: {color_accent};
-        color: {color_bg};
-    }}
-    QComboBox:disabled {{
-        background: {color_combo_disabled_bg};
-        border: {border_medium} {color_combo_disabled_border};
-        color: {color_combo_disabled_text};
-    }}
-    QComboBox::drop-down {{
-        subcontrol-origin: padding;
-        subcontrol-position: center right;
-        border-left: {border_thin} {color_border_faint};
-        padding: 12px;
-        height: 12px;
-        width: 12px;
-    }}
-    /* List when combobox is open */
-    QComboBox QAbstractItemView {{
-        outline: none;
-        background: {color_surface};
-        border: {border_medium} {color_accent};
-        border-top-style: none;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }}
-    QComboBox:editable {{
-        background: {color_surface};
-        color: {color_text};
-    }}
-    QComboBox::drop-down:editable:focus {{
-        background: {color_accent};
-        border-top-left-radius: 0px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 10px;
-    }}
-    QListView {{
-        background: {color_surface};
-    }}
-    QListView::item {{
-        padding: 7px 7px 7px 12px;
-        margin: 3px;
-        min-height: 24px;
-        border-radius: {border_radius_small};
-        color: {color_text};
-    }}
-    QListView::item:hover {{
-        background: {color_bg};
-    }}
-    QListView::item:selected {{
-        background: {color_bg};
-    }}
-    /* Selection in list when item is focused */
-    QListView::item:focus {{
-        background: {color_accent};
-        color: {color_bg};
-    }}
-"""
-
-SETTINGS_TABLE_COMBOBOX_STYLE = f"""
-    QComboBox#settingsTableCombo:hover,
-    QComboBox#settingsTableCombo:focus {{
-        background: {color_surface};
-        border: {border_medium} {color_accent};
-        color: {color_accent};
-    }}
-"""
