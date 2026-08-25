@@ -2,7 +2,7 @@ THEME_INHERITS = "standart"
 
 color_accent = "#c5003c"
 color_accent_dark = "#880425"
-color_accent_blue = "#55ead4"
+color_accent_blue = "#37B7CC"
 color_preloader = "#c5003c"
 color_bg = "#0f0508"
 color_bg_darker = "#060102"
@@ -26,7 +26,7 @@ color_border_subtle = "rgba(197, 0, 60, 0.2)"
 color_border_input = "#c5003c"
 color_border_light = "#c5003c"
 color_border_faint = "rgba(197, 0, 60, 0.15)"
-color_border_focus = "#55ead4"
+color_border_focus = "#37B7CC"
 color_checkbox_unchecked_bg = "#1d0a0f"
 color_checkbox_hover_bg = "#280e15"
 color_combo_disabled_bg = "#060102"
@@ -117,9 +117,9 @@ GAME_CARD_ANIMATION = {
     "scale_easing_curve": "OutBack",
     "scale_easing_curve_out": "InBack",
     "gradient_colors": [
-        {"position": 0, "color": "#c5003c"},
-        {"position": 0.5, "color": "#55ead4"},
-        {"position": 1, "color": "#c5003c"}
+        {"position": 0, "color": "#37B7CC"},
+        {"position": 0.5, "color": "#37B7CC"},
+        {"position": 1, "color": "#37B7CC"}
     ],
     "detail_page_fade_duration": 350,
     "detail_page_slide_duration": 500,
