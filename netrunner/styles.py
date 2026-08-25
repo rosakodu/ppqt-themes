@@ -140,6 +140,11 @@ ICON_COLORS = {
     "list": color_accent_blue,
     "grid": color_accent_blue,
     "view": color_accent_blue,
+    "menu": color_accent_blue,
+    "menu_steam": color_accent_blue,
+    "key_context": color_accent_blue,
+    "context_menu": color_accent_blue,
+    "delete": color_accent_blue,
 
     "*_hover": color_bg,
     "*_pressed": color_bg_darker,
