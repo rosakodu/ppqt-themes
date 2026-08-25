@@ -70,6 +70,17 @@ cp -r ppqt-themes/* ~/.local/share/PortProtonQt/themes/
 
 ---
 
+### Netrunner
+
+Тёмная тема в стиле интерфейса Cyberpunk 2077 с ало-малиновыми (`#c5003c`) и бирюзовыми (`#55ead4`) акцентами.
+
+> 🔗 Тема сделана на основе [Netrunner (Omarchy Theme)](https://github.com/Pierre-Aoki/omarchy-netrunner-theme)
+
+![Netrunner Library](netrunner/images/screenshots/1_library.png)
+![Netrunner Detail](netrunner/images/screenshots/2_detail.png)
+
+---
+
 ### Tokyo Night
 
 Тёмная эстетичная тема в стиле ярких ночных огней Токио.
