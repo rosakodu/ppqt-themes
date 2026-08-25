@@ -118,8 +118,7 @@ GAME_CARD_ANIMATION = {
     "scale_easing_curve_out": "InBack",
     "gradient_colors": [
         {"position": 0, "color": "#c5003c"},
-        {"position": 0.33, "color": "#f3e600"},
-        {"position": 0.66, "color": "#55ead4"},
+        {"position": 0.5, "color": "#880425"},
         {"position": 1, "color": "#c5003c"}
     ],
     "detail_page_fade_duration": 350,
