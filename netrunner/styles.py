@@ -1,9 +1,9 @@
 THEME_INHERITS = "standart"
 
-color_accent = "#37B7CC"
-color_accent_dark = "#1e6e7d"
+color_accent = "#c5003c"
+color_accent_dark = "#880425"
 color_accent_blue = "#37B7CC"
-color_preloader = "#37B7CC"
+color_preloader = "#c5003c"
 color_bg = "#0f0508"
 color_bg_darker = "#060102"
 color_surface = "#1d0a0f"
@@ -14,18 +14,18 @@ color_text = "#ffffff"
 color_text_accent_hover = "#0f0508"
 color_text_muted = "#e4356a"
 color_disabled_text = "#880425"
-color_border = "#37B7CC"
+color_border = "#c5003c"
 
 color_nav_inactive = "#e4356a"
-color_separator = "#37B7CC"
+color_separator = "#c5003c"
 color_scrollbar_bg = "#060102"
 color_scrollbar_handle = "#36131c"
-color_slider_handle = "#37B7CC"
-color_slider_groove_bg = "#1e6e7d"
-color_border_subtle = "rgba(55, 183, 204, 0.2)"
-color_border_input = "#37B7CC"
-color_border_light = "#37B7CC"
-color_border_faint = "rgba(55, 183, 204, 0.15)"
+color_slider_handle = "#c5003c"
+color_slider_groove_bg = "#880425"
+color_border_subtle = "rgba(197, 0, 60, 0.2)"
+color_border_input = "#c5003c"
+color_border_light = "#c5003c"
+color_border_faint = "rgba(197, 0, 60, 0.15)"
 color_border_focus = "#37B7CC"
 color_checkbox_unchecked_bg = "#1d0a0f"
 color_checkbox_hover_bg = "#280e15"
@@ -47,7 +47,7 @@ LIBRARY_WIDGET_STYLE = f"""
 """
 
 SOURCE_CORNER = {
-    "ribbon_color": "#37B7CC",
+    "ribbon_color": "#c5003c",
     "ribbon_fold_color": "#00000096",
     "size_ratio": 0.28,
     "min_size": 54,
