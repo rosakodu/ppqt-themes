@@ -133,6 +133,14 @@ GAME_CARD_ANIMATION = {
 
 # === Button Icons & Dynamic State Colors ===
 ICON_COLORS = {
+    "search": color_accent_blue,
+    "update": color_accent_blue,
+    "redo": color_accent_blue,
+    "reboot": color_accent_blue,
+    "list": color_accent_blue,
+    "grid": color_accent_blue,
+    "view": color_accent_blue,
+
     "*_hover": color_bg,
     "*_pressed": color_bg_darker,
     "*_focused": color_bg,
