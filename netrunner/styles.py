@@ -14,19 +14,19 @@ color_text = "#ffffff"
 color_text_accent_hover = "#0f0508"
 color_text_muted = "#e4356a"
 color_disabled_text = "#880425"
-color_border = "#5c0419"
+color_border = "#c5003c"
 
 color_nav_inactive = "#e4356a"
-color_separator = "#5c0419"
+color_separator = "#c5003c"
 color_scrollbar_bg = "#060102"
 color_scrollbar_handle = "#36131c"
 color_slider_handle = "#c5003c"
-color_slider_groove_bg = "#5c0419"
-color_border_subtle = "rgba(255, 255, 255, 0.05)"
+color_slider_groove_bg = "#880425"
+color_border_subtle = "rgba(197, 0, 60, 0.2)"
 color_border_input = "#c5003c"
-color_border_light = "#5c0419"
-color_border_faint = "rgba(255, 255, 255, 0.08)"
-color_border_focus = "#c5003c"
+color_border_light = "#c5003c"
+color_border_faint = "rgba(197, 0, 60, 0.15)"
+color_border_focus = "#55ead4"
 color_checkbox_unchecked_bg = "#1d0a0f"
 color_checkbox_hover_bg = "#280e15"
 color_combo_disabled_bg = "#060102"
@@ -47,7 +47,7 @@ LIBRARY_WIDGET_STYLE = f"""
 """
 
 SOURCE_CORNER = {
-    "ribbon_color": "#1d0a0f",
+    "ribbon_color": "#c5003c",
     "ribbon_fold_color": "#00000096",
     "size_ratio": 0.28,
     "min_size": 54,
@@ -91,7 +91,7 @@ PRELOADER = {
 
 GAME_CARD_ANIMATION = {
     "detail_page_animation_type": "fade",
-    "default_border_width": 2,
+    "default_border_width": 3,
     "hover_border_width": 6,
     "focus_border_width": 8,
     "pulse_min_border_width": 6,
